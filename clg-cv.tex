@@ -1,0 +1,586 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[a4paper, 10pt]{extarticle} % Default font size and paper size
+
+\usepackage{extsizes}
+\usepackage{enumitem}
+\usepackage{fontspec} % For loading fonts
+\usepackage{anyfontsize}
+\usepackage{longtable}
+\usepackage{tabularx}
+
+\defaultfontfeatures{Mapping=tex-text}
+%%\setmainfont{FontiReg} % Main document font
+
+%\setmainfont{Fontin_Sans_R_45b.otf}
+
+%\setmainfont % load font from path
+%    [
+%        Extension = .otf,
+%        UprightFont = Fontin_Sans_R_45b,
+%        BoldFont = Fontin_Sans_B_45b, % Linux Libertine O Regular Semibold
+%    ]
+%    {Fontin_Sans_R_45b}
+
+\setmainfont % load font from path
+    [
+        Extension = .otf,
+        UprightFont = SourceSansPro-Regular,
+        BoldFont = SourceSansPro-Semibold, % Linux Libertine O Regular Semibold
+        ItalicFont = SourceSansPro-Light,
+    ]
+    {SourceSansPro-Regular}
+    
+    %\setmainfont{Trebuchet MS}
+
+%\setmainfont % load font from path
+%    [
+%        Extension = .otf,
+%        UprightFont = AvenirLTStd-Book,
+%        BoldFont = AvenirLTStd-Medium, % Linux Libertine O Regular Semibold
+%        ItalicFont = AvenirLTStd-Light,
+%    ]
+%    {AvenirLTStd-Book}
+    
+%\setmainfont % load font from path
+%    [
+%        Extension = .ttf,
+%        UprightFont = Lato-Regular,
+%        BoldFont = Lato-Semibold, % Linux Libertine O Regular Semibold
+%        ItalicFont = Lato-Light,
+%    ]
+%    {Lato}
+    
+%\setmainfont{AvenirLTStd-Book.otf}
+
+\newfontfamily{\testfont}[
+		Extension = .otf,
+        UprightFont = BebasNeue_Regular,
+        BoldFont = BebasNeue_Bold,
+        ItalicFont = BebasNeue_Book,
+]
+{BebasNeue_Regular}
+
+%\newfontfamily{\avenirfont}[
+%		Extension = .otf,
+%        UprightFont = AvenirLTStd-Book,
+%        BoldFont = AvenirLTStd-Medium, % Linux Libertine O Regular Semibold
+%        ItalicFont = AvenirLTStd-Light,
+%]
+%{Avenir}
+%
+%\newfontfamily{\latofont}[
+%		Extension = .ttf,
+%        UprightFont = Lato-Regular,
+%        BoldFont = Lato-Semibold, % Linux Libertine O Regular Semibold
+%        ItalicFont = Lato-Light,
+%]
+%{Lato}
+
+\DeclareTextFontCommand{\textdifferenttt}{\testfont}
+
+\DeclareTextFontCommand{\textavenir}{\avenirfont}
+
+\DeclareTextFontCommand{\textlato}{\latofont}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{fullpage}
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{HTML}{DD5424} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%	 Email: \href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk} \\
+%		 Website: \href{http://connorlukegoddard.com}{http://connorlukegoddard.com}
+
+\begin{tabular}{l r}
+
+\begin{minipage}{9.8cm}
+\begin{flushleft}
+ \textdifferenttt{\fontsize{38}{0}\selectfont \textit{Connor}Luke\textbf{Goddard}}			
+\end{flushleft}
+\end{minipage}
+&
+		
+			\begin{minipage}{5.5cm}
+				\begin{flushright}
+					Address \\ \textit{Flat 1, 7 Market Street \\ Aberystwyth,  Ceredigion, SY23 1DL} 
+				\end{flushright}
+			\end{minipage}
+						
+\end{tabular}
+
+\begin{flushright}	
+					 Email \textit{\href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk}} \\
+	 				Website \textit{\href{http://connorlukegoddard.com}{http://connorlukegoddard.com}}
+\end{flushright}
+
+%\vspace{1cm}
+	
+%\begin{flushright}
+%\begin{tabular}{r | r}
+
+%\begin{minipage}[t]{3cm}
+%		\begin{flushright}
+%			\textbf{Term Address} \\ Flat 1 \\ 7 Market Street \\ Aberystwyth \\ Ceredigion \\ SY23 1DL 
+%		\end{flushright}
+%	\end{minipage} 
+%
+%& 
+%
+%\begin{minipage}[t]{2.6cm}
+%			\textbf{Home Address} \\ 85 Llangwm Ferry \\ Llangwm \\ Haverfordwest \\ Pembrokeshire \\ SA62 4JN 
+%	\end{minipage} 
+%\end{tabular}
+%
+%%Flat 1, 7 Market Street, Aberystwyth, Ceredigion, SY23 1DL \\
+%%Tel: 07791 736448 \\
+%%Email: \href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk} \\
+%%Website: \href{http://connorlukegoddard.com}{http://connorlukegoddard.com}
+%\end{flushright}
+
+ 
+\section{Profile}
+
+{\small Enthusiastic, determined, and hard-working third year student at Aberystwyth University, with very good teamwork and verbal and written communication skills, with experience of providing desktop and web solutions using a good working knowledge of Java, C\#, C/C++, UML, (X)HTML, CSS(3), Javascript, PHP and object orientated design patterns, including an appreciation of Haskell.}
+
+%----------------------------------------------------------------------------------------
+%	KEY SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Key Skills \& Experience}
+
+\begin{small}
+\begin{tabular}{r | p{12cm}}
+
+	\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Communication \& Collaboration}
+		\end{flushright}
+	\end{minipage} 
+		
+		& 
+		
+		Excellent verbal and written communication skills developed through working previously as a demonstrator and ambassador to the university computer science department, and interacting with other members of a software engineering team within a corporate environment, and producing software documentation at university. \\
+		
+		\multicolumn{2}{c}{} \\
+			
+		\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Industrial Experience}
+		\end{flushright}
+		\end{minipage} 
+		
+		& 
+		
+		Completed 14-month industrial placement working for international engineering company Renishaw plc as a Software Engineer intern with top-level university bursary and graduate position offered. \\
+
+	\multicolumn{2}{c}{} \\
+	
+	\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Developer Skills}
+		\end{flushright}
+		\end{minipage} 
+		
+		& 
+		
+		Good working knowledge of C, C++, Java/C\#, UML and object orientated design patterns (including MVC and OO) obtained during first and second year modules in which I received a mark greater than or equivalent to a first in every module. \\
+		
+		\multicolumn{2}{c}{} \\
+	
+	\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Head Boy}
+		\end{flushright}
+		\end{minipage} 
+		
+		& 
+		
+		Developed key leadership, communication, and team working skills while leading a 20-person senior prefect team including playing a key role in organising the `end of year' ball for the entire 6th form. \\
+
+	\multicolumn{2}{c}{} \\
+	
+		\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Freelance Work}
+		\end{flushright}
+		\end{minipage} 
+		
+		& 
+		
+		Produced a number of bespoke websites for both `business-to-business' and `business- to-consumer' real world clients, as a part-time freelance web designer. \\
+
+	\multicolumn{2}{c}{} \\
+
+\end{tabular}
+\end{small}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{longtable}{r | p{13cm}}
+
+			\textbf{Current}
+		
+		 & 
+		 
+		 Department Demonstrator  \\
+		 
+			Sept 2014
+		& 
+		
+		\textit{Abersytwyth University, Abersytwyth} \\ 
+		
+& 
+
+\footnotesize{Provide assistance to 1st and 2nd year students during assessed practical sessions providing technical and theory assistance in addition to verifying that assignments have been completed.} \\
+
+\multicolumn{2}{c}{} \\
+
+			June 2013 to
+		
+		 & 
+		 
+		 Software Engineer (Intern)  \\
+		 
+			Aug 2014
+		 
+		& 
+		 
+		\textit{Renishaw Plc - Wotton-under-edge, Gloucestershire} \\ 
+		
+& 
+
+\footnotesize{
+
+\vspace{-0.3cm}
+
+\begin{itemize}[leftmargin=*]
+\item 14-month industrial placement with international engineering company Renishaw plc, working within the Internet Development Team as a software/web engineer. 
+
+\item Involved in the development and maintenance of intelligent web-based and mobile applications used within a variety of applications including CMM control and metrology, using technologies including C\#, Javascript, HTML, CSS, and SQL, incorporating well-structured agile methodologies.
+
+\item Offered a graduate position, summer placement position and university bursary for the duration of my studies.
+
+\vspace{-0.3cm}
+
+\end{itemize}
+
+}
+
+\\
+
+\multicolumn{2}{c}{} \\
+
+		Feb 2012 to
+		
+		 & 
+		 
+		 Department Ambassador  \\
+		 
+			June 2013
+		 
+		& 
+		 
+		\textit{Aberystwyth University, Aberystwyth} \\ 
+		
+& 
+
+\footnotesize{
+
+\vspace{-0.3cm}
+
+\begin{itemize}[leftmargin=*]
+\item Selected to become a department ambassador in first year due to my confidence when communicating with the public.
+
+\item In addition, also selected to provide a 15-minute presentation to prospective students and their parents about ``student life" in Aberystwyth. 
+
+\item Developed verbal techniques to allow myself to speak professionally and clearly to the public in any situation.
+
+\item Gained experience in interacting with new people and answering/discussing any questions that they may have had. 
+
+\item Developed team working skills and gained experience while working as part of a team performing different roles with different team members during open days.
+
+\vspace{-0.3cm}
+
+\end{itemize}
+
+}
+
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r | p{13cm}}	
+
+
+\textbf{Current}
+		
+		 & 
+		 
+		 MEng (Hons) Software Engineering (with Industrial Year)  \\
+		 
+			Sept 2011
+		 
+		& 
+		 
+		\textit{Aberystwyth University, Aberystwyth} \\ 
+		
+& 
+
+\footnotesize{
+
+\vspace{-0.3cm}
+
+\begin{itemize}[leftmargin=*]
+\item On track for a \textbf{1st class degree} having currently achieved \textbf{70\% or greater} in every university course module. 
+
+\item Detailed breakdown of all module grades available on request.
+
+\vspace{-0.4cm}
+
+\end{itemize}
+} \\
+
+\multicolumn{2}{c}{}
+
+\end{tabular}
+
+\section{Volunteering}
+
+\begin{tabular}{r | p{13cm}}	
+
+\textbf{Current}
+		
+		 & 
+		 
+		 Student-Staff Committee Member  \\
+		 
+			Sept 2014
+		 
+		& 
+		 
+		\textit{Aberystwyth University, Aberystwyth} \\ 
+		
+& 
+
+\footnotesize{
+
+Currently represent all MEng Software Engineering students on the university Student-Staff Committee board, discussing issues surrounding all aspects of university life inside and outside of the Computer Science department. 
+
+\vspace{-0.4cm}
+
+} \vspace{-0.4cm} \\
+
+\multicolumn{2}{c}{} \\
+
+\textbf{Current}
+		
+		 & 
+		 
+		 Basic First Aider  \\
+		 
+			Dec 2014
+		 
+		& 
+		 
+		\textit{St John Ambulance, Aberystwyth Division} \\ 
+		
+& 
+
+\footnotesize{
+
+Currently qualified as a St John Ambulance Basic First Aider (achieved through Aberystwyth University First Aid society (LINKS)). Involved in St John Ambulance duties within Aberystwyth and the surrounding area. 
+
+\vspace{-0.4cm}
+
+} \vspace{-0.4cm} \\
+
+\multicolumn{2}{c}{} \\
+
+July 2014 
+
+		&
+		 
+		 CREW Member  \\
+		 
+		 &
+		 
+		\textit{Royal International Air Tattoo, Fairford, Gloucestershire} \\ 
+		
+& 
+
+\footnotesize{
+
+Volunteered at the Royal International Air Tattoo while working as an intern at Renishaw Plc. Focussing on excellent customer service, I worked as part of a close-knit team providing front-line support to the thousands of visitors attending one of the UK's largest and premier air-shows. 
+
+\vspace{-0.4cm}
+
+} \vspace{-0.4cm} \\
+
+\multicolumn{2}{c}{}
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+%\section{Scholarships and Certificates}
+%
+%\begin{tabular}{rl}
+%\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+%
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}%\setmainfont{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+%
+%\section{Languages}
+%
+%\begin{tabular}{rl}
+%\textsc{English:} & Fluent\\
+%
+%\textsc{Italian:} & Mothertongue\\
+%
+%\textsc{French:} & Basic Knowledge\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+{\small I enjoy a wide variety of interests and activities including being a committee member of the Aberystwyth Robotics Society in which I manage the `iCub’ robot development sub-group. I also enjoy a range of sports including mountain biking, kite boarding and sailing.}
+
+\section{Referees}
+
+\begin{tabularx}{\textwidth}{X X}
+
+\textbf{Dr. Simon Lee} & \textbf{Dr. Bernard Tiddeman} \\
+\textit{Internet Development Manager} & \textit{Senior Lecturer \& Head of Department} \\\\ 
+
+Renishaw Plc & Department of Computer Science \\ 
+Wotton Road, Charfield & Aberystwyth University \\ 
+Wotton-under-edge, GL12 8SP & Aberystwyth, Ceredigion, SY23 3DB  \\
+\textbf{Tel:} +44 (0)1453 524995 & \textbf{Tel:}  +44 (0)1970 621777 \\
+\textbf{Email:} simon.lee@renishaw.com & \textbf{Email:} bpt@aber.ac.uk
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%Corporate Finance (Valuation) & 25 & 6\\
+%Financial Statement Analysis & 28 & 6\\
+%Statistics & 27 & 6\\
+%Theory of Finance & 26 & 6\\
+%Quantitative Methods for Finance & 30 & 6\\
+%Econometrics & 24 & 6\\
+%Derivatives & 31 & 6\\
+%Management of Financial and Insurance Companies & 30 & 6\\
+%Business Law & 31 & 6\\
+%Investment Banking	& 28 & 6\\ \\		
+%Behavioral Models for Economics and Finance	 & 29 & 6\\
+%Numerical Methods for Finance & 29 & 6\\
+%Advanced Derivatives & 30 & 6\\
+%Fixed Income (Advanced Methods) & 30 & 6\\ \\
+%English Language & 30 &	4\\
+%French Language & 31 &	4\\	
+%Internship & & 8\\		
+%Final Thesis & & 20\\	
+%& Total & 120\\\cline{2-3}
+%&\textsc{Gpa}&\textbf{8.0}
+%\end{tabular}
+%\end{center}
+%\bigskip
+%\hrule
+%\bigskip
+
+%------------------------------------------------
+
+%\bigskip
+%
+%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+%
+%\begin{center}
+%\begin{tabular}{lcc}
+%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+%\hline
+%Corporate Financial Strategy & A & 4\\
+%Derivatives & A & 4\\
+%Money, Credit, and Banking & A & 4\\
+%Business Strategy & A- & 3.5\\
+%& &\\\cline{2-3}
+%& \textsc{Gpa} & \textbf{3.875}
+%\end{tabular}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
