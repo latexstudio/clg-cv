@@ -1,10 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Plasmati Graduate CV
+% Connor Luke Goddard - CV
 % LaTeX Template
-% Version 1.0 (24/3/13)
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
 %
 % Original author:
 % Alessandro Plasmati (alessandro.plasmati@gmail.com)
@@ -14,8 +11,6 @@
 %
 % Important note:
 % This template needs to be compiled with XeLaTeX.
-% The main document font is called Fontin and can be downloaded for free
-% from here: http://www.exljbris.com/fontin.html
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -26,6 +21,7 @@
 
 \documentclass[a4paper, 10pt]{extarticle} % Default font size and paper size
 
+% Allow for additional/smaller text sizes.
 \usepackage{extsizes}
 \usepackage{enumitem}
 \usepackage{fontspec} % For loading fonts
@@ -34,17 +30,6 @@
 \usepackage{tabularx}
 
 \defaultfontfeatures{Mapping=tex-text}
-%%\setmainfont{FontiReg} % Main document font
-
-%\setmainfont{Fontin_Sans_R_45b.otf}
-
-%\setmainfont % load font from path
-%    [
-%        Extension = .otf,
-%        UprightFont = Fontin_Sans_R_45b,
-%        BoldFont = Fontin_Sans_B_45b, % Linux Libertine O Regular Semibold
-%    ]
-%    {Fontin_Sans_R_45b}
 
 \setmainfont % load font from path
     [
@@ -55,29 +40,7 @@
     ]
     {SourceSansPro-Regular}
     
-    %\setmainfont{Trebuchet MS}
-
-%\setmainfont % load font from path
-%    [
-%        Extension = .otf,
-%        UprightFont = AvenirLTStd-Book,
-%        BoldFont = AvenirLTStd-Medium, % Linux Libertine O Regular Semibold
-%        ItalicFont = AvenirLTStd-Light,
-%    ]
-%    {AvenirLTStd-Book}
-    
-%\setmainfont % load font from path
-%    [
-%        Extension = .ttf,
-%        UprightFont = Lato-Regular,
-%        BoldFont = Lato-Semibold, % Linux Libertine O Regular Semibold
-%        ItalicFont = Lato-Light,
-%    ]
-%    {Lato}
-    
-%\setmainfont{AvenirLTStd-Book.otf}
-
-\newfontfamily{\testfont}[
+\newfontfamily{\titlenamefont}[
 		Extension = .otf,
         UprightFont = BebasNeue_Regular,
         BoldFont = BebasNeue_Bold,
@@ -85,36 +48,18 @@
 ]
 {BebasNeue_Regular}
 
-%\newfontfamily{\avenirfont}[
-%		Extension = .otf,
-%        UprightFont = AvenirLTStd-Book,
-%        BoldFont = AvenirLTStd-Medium, % Linux Libertine O Regular Semibold
-%        ItalicFont = AvenirLTStd-Light,
-%]
-%{Avenir}
-%
-%\newfontfamily{\latofont}[
-%		Extension = .ttf,
-%        UprightFont = Lato-Regular,
-%        BoldFont = Lato-Semibold, % Linux Libertine O Regular Semibold
-%        ItalicFont = Lato-Light,
-%]
-%{Lato}
-
-\DeclareTextFontCommand{\textdifferenttt}{\testfont}
-
-\DeclareTextFontCommand{\textavenir}{\avenirfont}
-
-\DeclareTextFontCommand{\textlato}{\latofont}
+\DeclareTextFontCommand{\titletext}{\titlenamefont}
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
 %\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{fullpage}
+
+\addtolength{\textheight}{1cm}
+
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{HTML}{DD5424} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
@@ -136,56 +81,40 @@
 %	 Email: \href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk} \\
 %		 Website: \href{http://connorlukegoddard.com}{http://connorlukegoddard.com}
 
-\begin{tabular}{l r}
+
+% @{} = Remove padding from left-hand cell.
+\begin{tabular}{@{} l r}
 
 \begin{minipage}{9.8cm}
-\begin{flushleft}
- \textdifferenttt{\fontsize{38}{0}\selectfont \textit{Connor}Luke\textbf{Goddard}}			
-\end{flushleft}
+	\begin{flushleft}
+ 			\titletext{\fontsize{38}{0}\selectfont \textit{Connor}Luke\textbf{Goddard}}		
+	\end{flushleft}
 \end{minipage}
+
 &
 		
+			\begin{small}
 			\begin{minipage}{5.5cm}
 				\begin{flushright}
 					Address \\ \textit{Flat 1, 7 Market Street \\ Aberystwyth,  Ceredigion, SY23 1DL} 
 				\end{flushright}
 			\end{minipage}
+			\end{small}
 						
 \end{tabular}
 
+\begin{small}
 \begin{flushright}	
 					 Email \textit{\href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk}} \\
-	 				Website \textit{\href{http://connorlukegoddard.com}{http://connorlukegoddard.com}}
+	 				Website \textit{\href{http://connorlukegoddard.com}{http://connorlukegoddard.com}} \\
+%	 				Github \textit{\href{https://github.com/cgddrd}{https://github.com/cgddrd}} \\
+%	 				LinkedIn \textit{\href{http://uk.linkedin.com/in/cgddrd}{http://uk.linkedin.com/in/cgddrd}}
 \end{flushright}
+\end{small}
 
-%\vspace{1cm}
-	
-%\begin{flushright}
-%\begin{tabular}{r | r}
-
-%\begin{minipage}[t]{3cm}
-%		\begin{flushright}
-%			\textbf{Term Address} \\ Flat 1 \\ 7 Market Street \\ Aberystwyth \\ Ceredigion \\ SY23 1DL 
-%		\end{flushright}
-%	\end{minipage} 
-%
-%& 
-%
-%\begin{minipage}[t]{2.6cm}
-%			\textbf{Home Address} \\ 85 Llangwm Ferry \\ Llangwm \\ Haverfordwest \\ Pembrokeshire \\ SA62 4JN 
-%	\end{minipage} 
-%\end{tabular}
-%
-%%Flat 1, 7 Market Street, Aberystwyth, Ceredigion, SY23 1DL \\
-%%Tel: 07791 736448 \\
-%%Email: \href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk} \\
-%%Website: \href{http://connorlukegoddard.com}{http://connorlukegoddard.com}
-%\end{flushright}
-
- 
 \section{Profile}
 
-{\small Enthusiastic, determined, and hard-working third year student at Aberystwyth University, with very good teamwork and verbal and written communication skills, with experience of providing desktop and web solutions using a good working knowledge of Java, C\#, C/C++, UML, (X)HTML, CSS(3), Javascript, PHP and object orientated design patterns, including an appreciation of Haskell.}
+{\small Enthusiastic, determined, and hard-working fourth year student at Aberystwyth University on track for a \textbf{first class degree}, with excellent \textbf{teamwork}, \textbf{communication}, and \textbf{problem-solving skills} gained from experience of providing sophisticated desktop, mobile and web-based software solutions utilising a variety of programming languages and development methodologies.}
 
 %----------------------------------------------------------------------------------------
 %	KEY SKILLS
@@ -196,18 +125,6 @@
 \begin{small}
 \begin{tabular}{r | p{12cm}}
 
-	\begin{minipage}[t]{2.5cm}
-		\begin{flushright}
-			\textbf{Communication \& Collaboration}
-		\end{flushright}
-	\end{minipage} 
-		
-		& 
-		
-		Excellent verbal and written communication skills developed through working previously as a demonstrator and ambassador to the university computer science department, and interacting with other members of a software engineering team within a corporate environment, and producing software documentation at university. \\
-		
-		\multicolumn{2}{c}{} \\
-			
 		\begin{minipage}[t]{2.5cm}
 		\begin{flushright}
 			\textbf{Industrial Experience}
@@ -216,11 +133,11 @@
 		
 		& 
 		
-		Completed 14-month industrial placement working for international engineering company Renishaw plc as a Software Engineer intern with top-level university bursary and graduate position offered. \\
+		Offered \textbf{top-level university bursary} and \textbf{further summer placement position} following a 14-month industrial placement working for international engineering company Renishaw plc as a Software Engineer intern.\\
 
 	\multicolumn{2}{c}{} \\
 	
-	\begin{minipage}[t]{2.5cm}
+		\begin{minipage}[t]{2.5cm}
 		\begin{flushright}
 			\textbf{Developer Skills}
 		\end{flushright}
@@ -228,10 +145,46 @@
 		
 		& 
 		
-		Good working knowledge of C, C++, Java/C\#, UML and object orientated design patterns (including MVC and OO) obtained during first and second year modules in which I received a mark greater than or equivalent to a first in every module. \\
+		Good working knowledge of a variety of programming languages including \textbf{C, C++, Java, C\#, Objective-C} and \textbf{HTML/CSS/Javascript} including an appreciation of Ruby (on-Rails), Swift and Python. Regular user of \textbf{version control systems} (Git/SVN) with a firm grasp of key \textbf{agile} and \textbf{plan-based development methodologies} including SCRUM and Waterfall.  \\
 		
 		\multicolumn{2}{c}{} \\
 	
+		\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{University Performance}
+		\end{flushright}
+		\end{minipage} 
+		
+		& 
+		
+		Currently achieved a first in every university module to date, with an \textbf{average grade of 84\%} achieved in the last semester.\\
+		
+		\multicolumn{2}{c}{} \\
+
+	\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{Communication \& Collaboration}
+		\end{flushright}
+	\end{minipage} 
+		
+		& 
+		
+		Excellent verbal and written communication skills developed through working within a variety of positions including demonstrator and ambassador to the university computer science department, member of a software engineering team within a corporate environment and volunteering as a customer service advisor at one of the world's largest air-shows. \\
+		
+		\multicolumn{2}{c}{} \\
+		
+			\begin{minipage}[t]{2.5cm}
+		\begin{flushright}
+			\textbf{High Altitude Balloon Project (July 2012)}
+		\end{flushright}
+	\end{minipage} 
+		
+		& 
+		
+		Key team member and \textbf{brainchild} of successful project to send HAB to the \textbf{edge of space} in order to capture aerial images of earth and collect atmospheric data. Received \textbf{national media coverage} from BBC, ITV and Wales Online. (\href{http://www.bbc.co.uk/news/uk-wales-south-west-wales-18793717}{BBC News Article}) \\
+		
+		\multicolumn{2}{c}{} \\
+			
 	\begin{minipage}[t]{2.5cm}
 		\begin{flushright}
 			\textbf{Head Boy}
@@ -281,7 +234,7 @@
 		
 & 
 
-\footnotesize{Provide assistance to 1st and 2nd year students during assessed practical sessions providing technical and theory assistance in addition to verifying that assignments have been completed.} \\
+\footnotesize{Working within a small, close-knit team, provide technical and academic assistance to 1\textsuperscript{st} and 2\textsuperscript{nd} year students during assessed practical sessions in addition to verifying that assignments have been successfully completed.} \\
 
 \multicolumn{2}{c}{} \\
 
@@ -304,11 +257,11 @@
 \vspace{-0.3cm}
 
 \begin{itemize}[leftmargin=*]
-\item 14-month industrial placement with international engineering company Renishaw plc, working within the Internet Development Team as a software/web engineer. 
+\item Offered a further \textbf{summer placement position} and \textbf{university bursary} following a 14-month industrial placement with international engineering company Renishaw plc, working within the Internet Development Team as a software/web engineer. 
 
-\item Involved in the development and maintenance of intelligent web-based and mobile applications used within a variety of applications including CMM control and metrology, using technologies including C\#, Javascript, HTML, CSS, and SQL, incorporating well-structured agile methodologies.
+\item Involved in the development and maintenance of intelligent web-based and mobile applications used within a variety of applications including CMM control and metrology. Developed using a variety of programming languages and technologies including C\#, Javascript, HTML, CSS, and SQL, incorporating \textbf{well-structured agile development methodologies}.
 
-\item Offered a graduate position, summer placement position and university bursary for the duration of my studies.
+\item Achieved high marks from management appraisal resulting in an overall grade of \textbf{80\%} for university industrial year. 
 
 \vspace{-0.3cm}
 
@@ -317,6 +270,7 @@
 }
 
 \\
+
 
 \multicolumn{2}{c}{} \\
 
@@ -334,26 +288,11 @@
 		
 & 
 
-\footnotesize{
+\footnotesize{Selected to become a department ambassador after being identified as a clear communicator with confidence in interacting with the general public. In addition I was asked to provide a series of 15-minute presentations to prospective students and their parents about ``student life" in Aberystwyth. 
 
 \vspace{-0.3cm}
 
-\begin{itemize}[leftmargin=*]
-\item Selected to become a department ambassador in first year due to my confidence when communicating with the public.
-
-\item In addition, also selected to provide a 15-minute presentation to prospective students and their parents about ``student life" in Aberystwyth. 
-
-\item Developed verbal techniques to allow myself to speak professionally and clearly to the public in any situation.
-
-\item Gained experience in interacting with new people and answering/discussing any questions that they may have had. 
-
-\item Developed team working skills and gained experience while working as part of a team performing different roles with different team members during open days.
-
-\vspace{-0.3cm}
-
-\end{itemize}
-
-}
+} \vspace{-0.3cm} \\
 
 \end{longtable}
 
@@ -370,7 +309,7 @@
 		
 		 & 
 		 
-		 MEng (Hons) Software Engineering (with Industrial Year)  \\
+		 MEng (Hons) Software Engineering with Industrial Year (\textbf{BCS Accredited})  \\
 		 
 			Sept 2011
 		 
@@ -385,7 +324,7 @@
 \vspace{-0.3cm}
 
 \begin{itemize}[leftmargin=*]
-\item On track for a \textbf{1st class degree} having currently achieved \textbf{70\% or greater} in every university course module. 
+\item On track for a \textbf{1st class degree} having currently achieved a grade of \textbf{70\% or greater} in every university course module. 
 
 \item Detailed breakdown of all module grades available on request.
 
@@ -394,7 +333,37 @@
 \end{itemize}
 } \\
 
-\multicolumn{2}{c}{}
+\multicolumn{2}{c}{} \\
+
+Sept 2004 to
+		
+		 & 
+		 
+		 Tasker Milward School, Pembrokeshire  \\
+		 
+			June 2011
+		 
+		& 
+	
+\footnotesize{
+
+\vspace{-0.3cm}
+
+\begin{itemize}[leftmargin=*]
+\item A-Levels: Computing (B), Applied Business (B) \& Physics (E)
+
+\item AS-Levels: Mathematics (E)
+
+\item 11 GCSEs including: ICT (A*), Graphics (A*), Science (A), English (A) and Maths (B)
+
+\item Key Skills: Working with Others (Level 3), Problem Solving (Level 3), Application of Number (Level 3), ICT (Level 3), Welsh Baccalaureate (Passed)
+
+\vspace{-0.4cm}
+
+\end{itemize}
+} \\
+
+\multicolumn{2}{c}{} 
 
 \end{tabular}
 
@@ -474,6 +443,7 @@ Volunteered at the Royal International Air Tattoo while working as an intern at 
 
 \end{tabular}
 
+
 %----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
@@ -506,10 +476,11 @@ Volunteered at the Royal International Air Tattoo while working as an intern at 
 
 \section{Interests and Activities}
 
-{\small I enjoy a wide variety of interests and activities including being a committee member of the Aberystwyth Robotics Society in which I manage the `iCub’ robot development sub-group. I also enjoy a range of sports including mountain biking, kite boarding and sailing.}
+{\small I enjoy a wide variety of interests and activities including holding a place on the committee of the Aberystwyth Robotics Society and being a member of the university First Aid society (LINKS). I also enjoy a range of sports including mountain biking, kite boarding and sailing.}
 
 \section{Referees}
 
+\begin{small}
 \begin{tabularx}{\textwidth}{X X}
 
 \textbf{Dr. Simon Lee} & \textbf{Dr. Bernard Tiddeman} \\
@@ -523,6 +494,7 @@ Wotton-under-edge, GL12 8SP & Aberystwyth, Ceredigion, SY23 3DB  \\
 
 \end{tabularx}
 
+\end{small}
 %----------------------------------------------------------------------------------------
 
 %\newpage
