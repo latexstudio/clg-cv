@@ -29,6 +29,7 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 
+
 \defaultfontfeatures{Mapping=tex-text}
 
 \setmainfont % load font from path
@@ -54,9 +55,13 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+%\usepackage[big]{layaureo} 
+
+% Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 
 \usepackage{fullpage}
+
+\usepackage[a4paper, top=0.9in, left=1in, right=1in]{geometry}
 
 \addtolength{\textheight}{1cm}
 
@@ -81,7 +86,6 @@
 %	 Email: \href{mailto:clg11@aber.ac.uk}{clg11@aber.ac.uk} \\
 %		 Website: \href{http://connorlukegoddard.com}{http://connorlukegoddard.com}
 
-
 % @{} = Remove padding from left-hand cell.
 \begin{tabular}{@{} l r}
 
@@ -94,9 +98,10 @@
 &
 		
 			\begin{small}
-			\begin{minipage}{5.5cm}
+			\begin{minipage}{5.6cm}
 				\begin{flushright}
-					Address \\ \textit{Flat 1, 7 Market Street \\ Aberystwyth,  Ceredigion, SY23 1DL} 
+					Address \\ \textit{Yr Hen Weithdy \\ Llanbadarn Road, Aberystwyth \\ Ceredigion, SY23 1EJ} 
+					
 				\end{flushright}
 			\end{minipage}
 			\end{small}
@@ -497,17 +502,62 @@ Wotton-under-edge, GL12 8SP & Aberystwyth, Ceredigion, SY23 3DB  \\
 \end{small}
 %----------------------------------------------------------------------------------------
 
-%\newpage
+\newpage
 
 %----------------------------------------------------------------------------------------
 %	GRADE TABLES
 %----------------------------------------------------------------------------------------
 
-%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-%
+\par{\centering\Large \hypertarget{grds}{Master of Engineering in {Software Engineering}}\par}\large{\centering Course Grades\par}\normalsize
+
+\vspace{20pt}
+
+\begin{center}
+\begin{tabular}{p{12cm}c}
+\multicolumn{1}{c}{\textit{Module}} & \textit{Grade} \\ \hline
+\\ \textit{Year 1} & \\ \\
+Introduction To Computer Hardware, Operating Systems And Unix Tools & 82 \\
+The Mathematics Driving License For Computer Science & 95 \\
+Concepts In Programming & 82 \\
+Professional And Personal Development & 80 \\
+Chaos, Communications And Consciousness & 70 \\
+Software Development & 82 \\
+Web Development Tools & 86 \\
+An Introduction To Communications And Telematics & 81 \\
+
+\\ \textit{Year 2} & \\ \\
+The Advanced Mathematics Driving License For Computer Science & 71 \\
+Program Design, Data Structures And Algorithms & 90 \\
+The Software Development Life Cycle & 77 \\
+C And Unix Programming & 89 \\
+Web Programming & 91 \\
+Web Programming & 82 \\
+Modelling Persistent Data & 95 \\
+User Centred Design And Human Computer Interaction & 71 \\
+C++, C And Java Programming Paradigms & 90 \\
+
+\\ \textit{Year 3} & \\ \\
+Industrial Placement (Renishaw plc) & 80 \\
+
+\\ \textit{Year 4} & \\ \\
+Agile Methodologies & 72 \\
+Advanced Computer Graphics & 85 \\
+Computer Vision & 70 \\
+Space Robotics & 84 \\
+Developing Internet-Based Applications & 78 \\
+Professional Issues In The Computing Industry & 81 \\
+Major Project (Dissertation) & 78 \\
+
+%\multicolumn{1}{r}{Total}& 120
+\end{tabular}
+\end{center}
+\bigskip
+\hrule
+\bigskip
+
 %\begin{center}
 %\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+%\multicolumn{1}{c}{\textsc{Module}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
 %Corporate Finance (Valuation) & 25 & 6\\
 %Financial Statement Analysis & 28 & 6\\
 %Statistics & 27 & 6\\
